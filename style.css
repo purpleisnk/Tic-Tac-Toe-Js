@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+:root{
+    --bacground-color: #051622;
+    --font-color: #deb992;
+    --box-color: #1ba098;
+}
+
+body{
+    color: var(--font-color);
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 62.3%;
+    background: var(--bacground-color)
+}
+
+.main_container{
+    display: block;
+    padding-top: 2rem;
+    display: grid;
+    place-items: center;
+}
+
+.title{
+    /* position: absolute; */
+    font-size: 2rem;
+}
+
+.play_container{
+    /* position: absolute; */
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.column1,
+.column2,
+.column3{
+    display: grid;
+    margin: 1rem;
+}
+
+#b1,
+#b2,
+#b3,
+#b4,
+#b5,
+#b6,
+#b7,
+#b8,
+#b9
+{  
+ 
+    text-align: center;
+    width: 8rem;
+    height: 6rem;
+    font-size: 2.5rem;
+    border: 2px solid var(--font-color);
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    color: var(--font-color);
+
+}
+
+
+.player__info{
+    padding: 0.5rem;
+
+}
+
+.player_turn{
+    font-size: 2rem;
+    margin: auto;
+}
+
+.winner{
+    display: block;
+    font-size: 1.5rem;
+    font-style:italic;
+    margin: auto;
+}
+
+.retry{
+    display: block;
+    background: var(--box-color);
+    border-radius: 1.5rem;
+    color: var(--font-color);
+    font-weight: 600;
+    font-size: 2rem;
+    padding: 1rem;
+    margin: auto;
+
+}
+
+.display_retry{
+    display: block;
+}

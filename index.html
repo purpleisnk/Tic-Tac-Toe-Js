@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe With JavaScript</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+    <div id="main-container" class="main_container">
+        <div class="title">
+            <h1>2 Player Turn Based Tic Tac Toe</h1>
+        </div>
+        <div class="play_container">
+            <!-- Main TIC TAC TOE BOARD -->
+            <div class="column1">
+                <input id="b1" type="text">
+                <input id="b2" type="text">
+                <input id="b3" type="text">
+            </div>
+            <div class="column2">
+                <input id="b4" type="text">
+                <input id="b5" type="text">
+                <input id="b6" type="text">
+            </div>
+            <div class="column3">
+                <input id="b7" type="text">
+                <input id="b8" type="text">
+                <input id="b9" type="text">
+            </div>
+        </div>
+
+
+        <div class="player__info">
+            <div class="player_turn" id="whose-turn">
+            </div>
+
+            <div class="winner">
+                <h3 id="winner"></h3>
+            </div>
+
+            <button class="retry" id="retry" onclick="window.location.reload(true);"> Retry</button>
+        </div>
+        
+
+    </div>
+
+</body>
+    <script src="./confetti.min.js"></script>
+    <script src="./main.js"></script>
+</html>
